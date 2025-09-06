@@ -1,0 +1,20 @@
+# Qdrant Vector Database Data
+# Ignore all data files and directories
+data/
+
+# Ignore any temporary files
+*.tmp
+*.log
+
+# Ignore backup files
+*.bak
+*.backup
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

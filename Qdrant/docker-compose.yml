@@ -1,0 +1,13 @@
+version: '3'
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.13.4
+    restart: always
+    container_name: qdrant
+    ports:
+      - 9500:6333   # Host port 9500 mapped to container port 6333
+    volumes:
+      - ./data:/qdrant/storage
+    environment:
+      - QDRANT__SERVICE__API_KEY=
+      - QDRANT__SERVICE__ENABLE_TLS=0
