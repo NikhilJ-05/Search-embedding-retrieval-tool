@@ -1,0 +1,19 @@
+Chunk Format
+
+{
+  "id": "doc1_chunk_001",
+  "content": "The actual text of the chunk goes here. It should be between 300–500 tokens for optimal embeddings.",
+  "metadata": {
+    "doc_id": "doc1",
+    "source_url": "https://example.com/quantum",
+    "published_date": "2023-05-01",
+    "chunk_index": 1,
+    "total_chunks": 12,
+    "tokens": 420
+  }
+}
+
+
+Chunker: RecursiveCharacterTextSplitter
+embeddings: BAAI/bge-large-en-v1.5
+DB: Qdrant
